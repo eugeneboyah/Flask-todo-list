@@ -12,7 +12,7 @@
 
 /* Heading style */
 .content h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
     color: #333;
     text-transform: uppercase;
@@ -61,7 +61,7 @@
     text-decoration: none;
     border-radius: 5px;
     color: white;
-    margin: 5px 0;
+    margin: 5px 5px 0 0;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -136,4 +136,50 @@ form input[type="submit"]:focus {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.8em;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    form input[type="text"], form input[type="submit"] {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .table th, .table td {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    form input[type="text"], form input[type="submit"] {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .table td a {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
 }
